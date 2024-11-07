@@ -1,0 +1,98 @@
+
+/* ------------------------------------------- Navigasjon ----------------------------------------------------------*/
+
+/*  flexbox navigation bar */
+nav ul {
+    display: flex;                 /* Display the items in a row */
+    justify-content: center;       /* Center the items horizontally */
+    align-items: center;           /* Center the items vertically */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;         
+    flex-wrap: wrap;               /* Allow wrapping for mobile screens */
+}
+
+/* Styling list item */
+nav ul li {
+    margin: 10px;                  
+}
+
+/* Tydliggjøre hva man hoverer over litt usikker på om dette var på demoen men velger å ta det med */
+nav ul li:hover{
+    text-decoration: underline;
+  }
+
+   
+
+
+nav ul li a {
+    text-decoration: none;         
+    color: #333;                   
+    font-size: 16px;                
+    font-family: sans-serif;
+}
+
+
+nav ul li h2 a{
+        font-size: 34px;        
+        font-weight: bold;
+}
+
+/*  spave mellom navigerings "meny" og ikonene*/
+nav ul li.icon-item {
+    margin-left: 130px; 
+}
+
+
+/* search container */
+.search-container {
+    position: relative;
+    padding-right: 130px;
+}
+
+/* Search bar input */
+.search-bar {
+    padding: 8px 30px 8px 10px;    /* Padding tfor plass til ikonet */
+    font-size: 16px;
+    border: solid black;
+    border-radius: 19px;
+    
+   
+}
+
+/*  plasere Search ikon inside i input field */
+.search-icon {
+    position: absolute;
+    right: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #333;
+}
+
+/* Styling for icons in the nav */
+nav ul li a i {
+    margin-right: 8px;             
+    font-size: 18px;               
+    color: #333;                   
+}
+
+/* Responsive design: Adjust layout for mobile screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;   /* Stack items vertically on smaller screens */
+        align-items: center;      /* Sentrer elementene horisontalt */
+    }
+
+    nav ul li {
+        margin: 5px 0;            /* Redusere margin mellom elementene */
+    }
+
+    .search-bar {
+        width: 100%;              
+    }
+}
+
+/* ------------------------------------------ Image Carusell ----------------------------------------------------------*/
+
+
