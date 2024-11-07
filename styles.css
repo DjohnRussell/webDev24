@@ -212,5 +212,50 @@ nav ul li a i {
     right: 10px;
     opacity: 50%;
   }
+   /* -------------------------- Våre mestpopulere ... ------------------------------- */
+
+   .poplulere article {
+    text-align: center; /* Centers text horizontally */
+    margin-bottom: 20px; /* Adds spacing between articles */
+    padding-top: 35px;
+  }
   
+  .poplulere article h3 {
+    margin: 0; /* Removes default margin */
+    padding: 10px 0; /* Optional: Adds some vertical padding */
+    font-size: 32px; /* You can adjust the size if needed */
+    color: #333; /* Optional: Adjust color for better readability */
+    font-family: sans-serif;
+  }
+
+  .poplulere article p{
+    text-align: center; /* Centers text horizontally */
+    margin-bottom: 20px; /* Adds spacing between articles */
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+
+  .poplulere article button{
+    border-radius: 20px;
+    background-color:white;
+    color: rgb(48, 44, 44);
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-weight:500; 
+    border-style: solid;
+    
+  }
+
+  .poplulere article button:hover{
+    
+    background-color: rgb(48, 44, 44);
+    color: white;
+     
+  }
+
+
   
