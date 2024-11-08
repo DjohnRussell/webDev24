@@ -35,7 +35,7 @@ nettbutikk-eksamen/
 ├── product.html       # Produktside
 ├── checkout.html      # Kasseside
 └── style.css          # CSS-stilark
-
+```
 ---
 ##🖌️ av 
 Daniel John Russell
