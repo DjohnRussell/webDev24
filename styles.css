@@ -254,8 +254,22 @@ nav ul li a i {
     
     background-color: rgb(48, 44, 44);
     color: white;
-     
   }
+
+  
+  .poplulere article figure img{
+    opacity: 70%;
+    width: 380px;
+    height: 380px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .image-wrapper{
+    border-radius: 26px;     
+  }
+
+  
 
 
   
