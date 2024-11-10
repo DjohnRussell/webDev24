@@ -1,275 +1,285 @@
+/* ------------------------------------------- Base Styles ------------------------------------------- */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* ------------------------------------------- Navigasjon ----------------------------------------------------------*/
-
-/*  flexbox navigation bar */
+/* ------------------------------------------- Navigation ------------------------------------------- */
 nav ul {
-    display: flex;                 /* Display the items in a row */
-    justify-content: center;       /* Center the items horizontally */
-    align-items: center;           /* Center the items vertically */
-    padding: 0;
-    margin: 0;
-    list-style-type: none;         
-    flex-wrap: wrap;               /* Allow wrapping for mobile screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
-/* Styling list item */
 nav ul li {
-    margin: 10px;                  
+  margin: 10px;
 }
 
-/* Tydliggjøre hva man hoverer over litt usikker på om dette var på demoen men velger å ta det med */
-nav ul li:hover{
-    text-decoration: underline;
-  }
-
-   
-
+nav ul li:hover {
+  text-decoration: underline;
+}
 
 nav ul li a {
-    text-decoration: none;         
-    color: #333;                   
-    font-size: 16px;                
-    font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 
-
-nav ul li h2 a{
-        font-size: 34px;        
-        font-weight: bold;
+nav ul li h2 a {
+  font-size: 34px;
+  font-weight: bold;
 }
 
-/*  spave mellom navigerings "meny" og ikonene*/
 nav ul li.icon-item {
-    margin-left: 130px; 
+  margin-left: 130px;
 }
 
-
-/* search container */
 .search-container {
-    position: relative;
-    padding-right: 130px;
+  position: relative;
+  padding-right: 130px;
 }
 
-/* Search bar input */
 .search-bar {
-    padding: 8px 30px 8px 10px;    /* Padding tfor plass til ikonet */
-    font-size: 16px;
-    border: solid black;
-    border-radius: 19px;
-    
-   
+  padding: 8px 30px 8px 10px;
+  font-size: 16px;
+  border: solid black;
+  border-radius: 19px;
+  width: 200px;
 }
 
-/*  plasere Search ikon inside i input field */
 .search-icon {
-    position: absolute;
-    right: 140px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #333;
+  position: absolute;
+  right: 140px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #333;
 }
 
-/* Styling for icons in the nav */
-nav ul li a i {
-    margin-right: 8px;             
-    font-size: 18px;               
-    color: #333;                   
-}
-
-/* Responsive design: Adjust layout for mobile screens */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;   /* Stack items vertically on smaller screens */
-        align-items: center;      /* Sentrer elementene horisontalt */
-    }
-
-    nav ul li {
-        margin: 5px 0;            /* Redusere margin mellom elementene */
-    }
-
-    .search-bar {
-        width: 100%;              
-    }
-}
-
-/* ------------------------------------------ Image Carusell ----------------------------------------------------------*/
+/* ------------------------------------------- Carousel ------------------------------------------- */
 .carousel {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;  
-    max-width: 1200px; 
-    margin: auto;
-    height: 500px;  
-    overflow: hidden;  
-    border-radius: 20px;
-  }
-  
-  .carousel-images {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;  
-    flex-wrap: nowrap;  
-    opacity: 70%;
-  }
-  
-  .carousel-images .carousel-slide {
-    flex: 0 0 100%;  
-    height: 100%;  
-    position: relative;
-  }
-  
-  .carousel-images img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;  
-    border-radius: 15px; 
-  }
-  
-  
-  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+}
 
-  .lorem-text-1, .lorem-text-2, .lorem-text-3 {
-    position: absolute; 
-    right: 10px; 
-    color: rgb(16, 16, 16);
-    font-size: 32px;
-    font-weight: bold;
-    font-family: sans-serif;
-    margin: 0;  
-    line-height: 1.5;  
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.carousel-images .carousel-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.lorem-text-1, .lorem-text-2, .lorem-text-3,
+.lorem-text-4, .lorem-text-5, .lesMerBtn {
+  position: absolute;
+  color: rgb(16, 16, 16);
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.lorem-text-1 { top: 245px; right: 250px; font-size: 32px; font-weight: bold; }
+.lorem-text-2 { top: 285px; right: 250px; font-size: 32px; font-weight: bold; }
+.lorem-text-3 { top: 335px; right: 250px; font-size: 32px; font-weight: bold; }
+.lorem-text-4 { top: 420px; right: 250px; font-size: 15px; font-weight: lighter; }
+.lorem-text-5 { top: 440px; right: 250px; font-size: 15px; font-weight: lighter; }
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.arrow-left { left: 10px; }
+.arrow-right { right: 10px; }
+
+.lesMerBtn{
+  top: 500px;
+  right: 250px;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(48, 44, 44);
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-style: solid;
+}
+
+.lesMerBtn:hover{
+  background-color: rgb(48, 44, 44);
+  color: white;
+}
+
+/* ------------------------------------------- Popular Section ------------------------------------------- */
+.poplulere article {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 35px;
+}
+
+.poplulere article h3 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 32px;
+  color: #333;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.poplulere article p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.poplulere article button {
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(48, 44, 44);
+  padding: 10px 15px;
+  font-weight: 500;
+  border: solid 1px #333;
+  font-family: sans-serif;
+}
+
+.poplulere article button:hover {
+  background-color: rgb(48, 44, 44);
+  color: white;
+}
+
+.poplulere article figure img {
+  opacity: 70%;
+  width: 380%;
+  max-width: 380px;
+  height: 400;
+  border-radius: 20px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.image-wrapper { border-radius: 26px; }
+
+/* ------------------------------------------- Responsive Design ------------------------------------------- */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .lorem-text-4, .lorem-text-5 {
-    position: absolute; 
-    right: 10px; 
-    color: rgb(16, 16, 16);
-    font-size: 15px;
-    font-weight:lighter;
-    font-family: sans-serif;
-    margin: 0;  
-    line-height: 1.5;  
+
+  nav ul li {
+      margin: 5px 0;
   }
-  /* Styler hver paragaf induviduellt */
+
+  .search-bar {
+      width: 100%;
+  }
+
+  .search-icon {
+      right: 10px;
+  }
+
+  .carousel {
+      height: 300px;
+  }
+
   .lorem-text-1 {
-    top: 245px; 
-    right: 250px;
+    font-size: 14px;
+      top: 450px;
+      right: 140px;
   }
-  
+
   .lorem-text-2 {
-    top: 285px; 
-    right: 250px;
+    font-size: 14px;
+      top: 465px;
+      right: 140px;
   }
-  
+
   .lorem-text-3 {
-    top: 335px; 
-    right: 250px;
+    font-size: 14px;
+      top: 489px;
+      right: 140px;
   }
 
   .lorem-text-4 {
-    top: 420px; 
-    right: 250px;
-  }
+    font-size: 12px;
+    top:530px;
+    right: 130px;}
 
   .lorem-text-5 {
-    top: 440px; 
-    right: 250px;
-  }
-
-
-  .lorem-text-1 + .lorem-text-2 {
-    margin-top: 5px;  
-  }
-  
-  .lorem-text-2 + .lorem-text-3 {
-    margin-top: 5px;  
-  }
-  
-
-  /* -------------------------- Navigation arrows ------------------------------- */
-  .arrow {
-    position: absolute;
-    top: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: whitesmoke;
-    color: black;
-    border: none;
-    cursor: pointer;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    font-size: 20px;
-  }
-  
-  .arrow-left {
-    left: 10px;
-    opacity: 50%;
-  }
-  
-  .arrow-right {
-    right: 10px;
-    opacity: 50%;
-  }
-   /* -------------------------- Våre mestpopulere ... ------------------------------- */
-
-   .poplulere article {
-    text-align: center; /* Centers text horizontally */
-    margin-bottom: 20px; /* Adds spacing between articles */
-    padding-top: 35px;
-  }
-  
-  .poplulere article h3 {
-    margin: 0; /* Removes default margin */
-    padding: 10px 0; /* Optional: Adds some vertical padding */
-    font-size: 32px; /* You can adjust the size if needed */
-    color: #333; /* Optional: Adjust color for better readability */
-    font-family: sans-serif;
-  }
-
-  .poplulere article p{
-    text-align: center; /* Centers text horizontally */
-    margin-bottom: 20px; /* Adds spacing between articles */
     font-size: 12px;
-    font-family: sans-serif;
-    font-weight: 300;
+    top:545px;
+    right: 130px;
   }
 
-  .poplulere article button{
-    border-radius: 20px;
-    background-color:white;
-    color: rgb(48, 44, 44);
-    padding: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    justify-content: space-between;
-    font-family: sans-serif;
-    font-weight:500; 
-    border-style: solid;
-    
+  .lesMerBtn{
+    top: 570px;
+    right: 130px;
   }
 
-  .poplulere article button:hover{
-    
-    background-color: rgb(48, 44, 44);
-    color: white;
+
+}
+
+@media (min-width: 1024px) {
+  .carousel {
+      height: 600px;
   }
 
-  
-  .poplulere article figure img{
-    opacity: 70%;
-    width: 380px;
-    height: 380px;
-    padding-left: 7px;
-    padding-right: 7px;
+  .lorem-text-1, .lorem-text-2, .lorem-text-3 {
+      font-size: 36px;
+      right: 250px;
   }
 
-  .image-wrapper{
-    border-radius: 26px;     
+  .lorem-text-4, .lorem-text-5 {
+      font-size: 18px;
+      right: 250px;
   }
+}
 
-  
+
+
+
+
+
 
 
   
