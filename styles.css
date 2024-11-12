@@ -385,6 +385,7 @@ nav ul li.icon-item {
   font-size: 14px ;
   line-height: 0.5;
   
+  
 }
 
 .reviwer{
@@ -408,10 +409,10 @@ nav ul li.icon-item {
 }
 
 /*---------------------------------------- Footer ----------------------------------------*/
-..footer ul {
+.footer ul {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -422,22 +423,57 @@ nav ul li.icon-item {
 .footer ul li {
   padding-left: 80px;
   text-decoration: none;
-  width: 800px;  
-  margin-bottom: 10px;  /* Space between rows */
-  list-style-type: none;
+  width: 2100px;  
+  margin-bottom: 10px;  
 }
 
-.footer ul li h2 a{
+.footer ul li h2 a {
   color: #333;
   font-size: 34px;
   font-family: sans-serif;
   text-decoration: none;
 }
 
-.footer ul li .kontakt{
-  padding-top: 20px;
-  font-size: 28px;
+
+
+/* Side-by-side layout for Snarveier and Sosiale Medier */
+.side-by-side {
+  display: flex;
+  gap: 340px; /* Space between the two sections */
 }
+
+.kontakt-info a {
+  text-decoration: none;
+  color: black;
+}
+
+.kontakt-info a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.footer ul li .kontakt h2, .snarveier h2, .sosiale-medier h2{
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.sosiale-medier a{
+  text-decoration: none;
+  color: black;
+  padding-left: 14px;
+  font-size: 25px;
+}
+
+.sosiale-medier a:hover{
+  text-decoration: underline;
+}
+
+
+
 
 
 
