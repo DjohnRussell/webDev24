@@ -407,6 +407,39 @@ nav ul li.icon-item {
   margin: 20px auto;              
 }
 
+/*---------------------------------------- Footer ----------------------------------------*/
+..footer ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+.footer ul li {
+  padding-left: 80px;
+  text-decoration: none;
+  width: 800px;  
+  margin-bottom: 10px;  /* Space between rows */
+  list-style-type: none;
+}
+
+.footer ul li h2 a{
+  color: #333;
+  font-size: 34px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.footer ul li .kontakt{
+  padding-top: 20px;
+  font-size: 28px;
+}
+
+
 
 
 
