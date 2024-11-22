@@ -458,8 +458,14 @@ nav ul li.icon-item {
   font-size: 19px;
 }
 
-.snarveier p{
+.snarveier p a{
   font-size: 19px;
+  text-decoration: none;
+  color: black;
+}
+
+.snarveier p a:hover{
+  text-decoration: underline;
 }
 
 .kontakt-info a:hover {
@@ -585,6 +591,29 @@ nav ul li.icon-item {
 /* ------------------------------------------- Produckt ------------------------------------------- */
 /* -------------------------------------------------------------------------------------- */
 
+/*--------------------- Breadcrum produktside----------------------*/
+
+.breadcrumb {
+  margin: 10px 0;
+  font-size: 1.2em;
+  padding-left: 177px;
+}
+
+.breadcrumb a {
+  color: black;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  font-weight: bold;
+  color: #333;
+}
+
+
 
 /*-------------------------------------- Img grid---------------------------------*/
 .container {
@@ -667,6 +696,7 @@ nav ul li.icon-item {
   width: 100%;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .shop-btn:hover{
@@ -682,6 +712,7 @@ nav ul li.icon-item {
   padding-left: 14px;   
   padding-right: 14px;     
   margin-top: 10px; 
+  margin-bottom: 20px;
 }
 
 
@@ -705,7 +736,228 @@ nav ul li.icon-item {
   position: relative; 
 }
 
+.size-bar + .arrow {
+  position: absolute;  
+  left: 1070px;  
+  top: 50.7%;  
+  transform: translateY(-50%);  
+  background-color: transparent;
+}
+
+
+
 /*-------------------------- arrow icon--------------------*/
+
+
+/* ------------------text under btns--------------------------*/
+.styled-line-short{
+  border: 0; 
+  height: 1.5px;
+  background-color: black; 
+  width: 100%; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.prod-info p{
+  font-family: sans-serif;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 17px;
+  font-weight: bold;
+
+}
+
+/*------------ prod carusell*/
+
+.carousel-section {
+  text-align: center;
+  margin: 20px;
+  padding-left: 117px;
+  padding-right: 117px;
+}
+.carousel-section h2{
+  padding-left: 35px;
+}
+
+.carousel-section h3 span{
+  padding-left: 900px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+.carousel-container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+  margin-bottom: 0px;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 250px;
+  scroll-snap-align: start;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-img {
+  width: 80%;
+  height: 80%;
+  opacity: 90%;
+  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.carousel-body {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;            
+}
+
+.carousel-title {
+  font-size: 1.3em;
+  padding-left: -20px;
+  font-family: sans-serif;
+  padding-right: 10px;
+}
+
+.carousel-price {
+  font-size: 0.8em;
+  color: black;
+  font-family: sans-serif;
+}
+
+
+.beside {
+  display: flex;
+  align-items: center;  /* Vertically align the items to the center */
+  gap: 10px;  /* Adjust the gap between the stars and the review count */
+}
+
+.three-stars {
+  width: 90px;  /* Adjust the size of the star image */
+  height: auto;
+}
+
+.beside p {
+  margin: 0; /* Remove default margin to reduce space */
+  font-size: 0.9em;
+  color: black;
+  line-height: 1.5;  /* Adjust line height for better alignment */
+}
+
+/*------------------- checkout / kasse ----------------------*/
+
+.main-content {
+  
+  padding-left: 170px;
+  max-width: 960px;
+  
+}
+
+.main-content a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set the color to black */
+  font-size: 14px; /* Adjust the font size for better readability */
+}
+
+.main-content a:hover {
+  color: #333; /* Optional: Add a hover effect for better user experience */
+}
+
+.main-content a:active {
+  color: purple; /* Optional: Add a hover effect for better user experience */
+}
+
+.main-content h3{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+/* test */
+
+/* Specific styling for the checkout section */
+.main-content .shopping-cart {
+  text-align: center;
+  padding: 20px;
+  border: 3px thin #333; /* Adds a thick border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background inside the border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
+}
+
+.shopping-cart h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.shopping-cart .card {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.shopping-cart .product-img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.shopping-cart .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shopping-cart .product-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shopping-cart .price {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.shopping-cart .color {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.shopping-cart input {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 60px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.shopping-cart input[type="number"] {
+  width: 60px;
+}
+
+.shopping-cart label {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
 
 
 
