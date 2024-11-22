@@ -618,10 +618,10 @@ nav ul li.icon-item {
 /*-------------------------------------- Img grid---------------------------------*/
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns: left for images, right for product details */
+  grid-template-columns: 1fr 1fr; 
   gap: 24px;
-  align-items: start; /* Align the content at the top */
-  max-width: 900px; /* Adjust width as needed */
+  align-items: start; 
+  max-width: 900px; 
   margin: 180px; 
   margin-top: 10px;
 }
@@ -839,20 +839,20 @@ nav ul li.icon-item {
 
 .beside {
   display: flex;
-  align-items: center;  /* Vertically align the items to the center */
-  gap: 10px;  /* Adjust the gap between the stars and the review count */
+  align-items: center;  
+  gap: 10px;  
 }
 
 .three-stars {
-  width: 90px;  /* Adjust the size of the star image */
+  width: 90px;  
   height: auto;
 }
 
 .beside p {
-  margin: 0; /* Remove default margin to reduce space */
+  margin: 0; 
   font-size: 0.9em;
   color: black;
-  line-height: 1.5;  /* Adjust line height for better alignment */
+  line-height: 1.5;  
 }
 
 /*------------------- checkout / kasse ----------------------*/
@@ -865,17 +865,17 @@ nav ul li.icon-item {
 }
 
 .main-content a {
-  text-decoration: none; /* Remove underline */
-  color: black; /* Set the color to black */
-  font-size: 14px; /* Adjust the font size for better readability */
+  text-decoration: none; 
+  color: black; 
+  font-size: 14px; 
 }
 
 .main-content a:hover {
-  color: #333; /* Optional: Add a hover effect for better user experience */
+  color: #333; 
 }
 
 .main-content a:active {
-  color: purple; /* Optional: Add a hover effect for better user experience */
+  color: purple; 
 }
 
 .main-content h3{
@@ -884,16 +884,16 @@ nav ul li.icon-item {
   font-size: 20px;
 }
 
-/* test */
+/* -------------------- main--------------------- */
 
-/* Specific styling for the checkout section */
+
 .main-content .shopping-cart {
   text-align: center;
   padding: 20px;
-  border: 3px thin #333; /* Adds a thick border */
-  border-radius: 8px; /* Rounded corners */
-  background-color: #fff; /* White background inside the border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
+  border: 3px thin #333;
+  border-radius: 8px; 
+  background-color: #fff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .shopping-cart h1 {
