@@ -34,11 +34,7 @@
         </ul>
     </nav>
 
-    <!-- Breadcrumb Section -->
-    <section class="breadcrumb">
-      <p><a href="index.html">Hjem</a> &gt; <a href="product.html">Kategori</a> &gt; <span>Kasse</span></p>
-    </section>
-
+   
     <section class="main-content">
       <main>
         <p><a href="product.html"><i class="fas fa-arrow-left"></i> Fortsett å handle</a></p>
@@ -145,14 +141,74 @@
             <button class="save-btn">Lagre</button>
           </section>
 
-          <section>
+          <section class="cancel">
             <p>
               <a href="index.html">Avbryt</a>
             </p>
           </section>
         </article>
+    
         
+        <article class="shopping-cart">
+          <h1>3.LEVERING</h1>
+          <section class="deliv-card">
+            <input type="radio" id="ekspress-levering" name="delivery-option" value="ekspress">
+            <label for="ekspress-levering" class="delivery-label">
+              Ekspress Hjemlevering
+              <span class="price">59 kr</span>
+              <i class="fas fa-truck delivery-icon"></i>
+            </label>
+
+          </section>
+          
+
+          <section class="deliv-card-2">
+            <input type="radio" id="ekspress-levering" name="delivery-option" value="ekspress">
+            <label for="ekspress-levering" class="delivery-label-2">
+              Ekspress Pakke til utleveringsted
+              <span class="price">59 kr</span>
+            </label>
+          </section>
+
+          <section class="deliv-card">
+            <input type="radio" id="ekspress-levering" name="delivery-option" value="ekspress">
+            <label for="ekspress-levering" class="delivery-label">
+              Standard Hjemlevering
+              <span class="price">Gratis</span>
+              <i class="fas fa-box delivery-icon"></i> <!-- Delivery truck icon -->
+            </label>
+          </section>
+        </article>  
+
+        <article class="shopping-cart">
+          <h1>4.BETALING</h1>
         
+          <p>Betal med kort <i class="fas fa-credit-card"></i></p>
+        
+          <!-- holder klasse navnene det samme da de er så å si identiske -->
+          <article>
+            <section class="kortnummer">
+              <label for="kortnummer">Kortnummer</label>
+              <input type="text" id="kortnummer" placeholder="342342****4435">
+            </section>
+          
+            <section class="betaling">
+              <span>
+                <label for="utløpsdato">Utløpsdato</label>
+                <input type="text" id="utløpsdato" placeholder="mm/dd/yy">
+              </span>
+            
+              <span>
+                <label for="cvc">CVC/CVV</label>
+                <input type="text" id="cvc" placeholder="CVC/CVV">
+              </span>
+            </section>
+          
+            <section>
+              <button class="save-btn">Fullfør kjøp</button>
+            </section>
+          </article>
+
       </main>
     </section>
     

@@ -914,11 +914,17 @@ nav ul li.icon-item {
   justify-content: flex-start; 
 }
 
-.shopping-cart .product-name,
+
 .shopping-cart .price,
 .shopping-cart .color,
 .shopping-cart label {
   font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.shopping-cart .product-name{
+  font-size: 19px;
   margin-bottom: 10px;
 }
 
@@ -976,7 +982,64 @@ nav ul li.icon-item {
   border: 1px solid #ccc;  
   border-radius: 0px;  
   outline: none; 
+  padding-left: 10px;
 }
+
+
+.kortnummer {
+  display: flex;            
+  flex-direction: column;   
+  margin-bottom: 15px;      
+}
+
+.kortnummer label {
+  font-size: 14px;           
+  color: black;               
+  margin-bottom: 5px;        
+}
+
+.kortnummer input {
+  width: 100%;               
+  height: 30px;              
+  font-family: sans-serif;   
+  font-size: 17px;           
+  border: 1px solid #ccc;    
+  border-radius: 5px;        
+  outline: none;             
+  padding-left: 10px;        
+}
+
+.betaling {
+  display: flex;                
+  gap: 2px;                     
+}
+
+.betaling label {
+  display: block;               
+  font-size: 14px;              
+  color: black;                 
+  margin-bottom: 2px;           
+}
+
+.betaling span {
+  display: flex;                
+  flex-direction: column;       
+  width: 45%;                   
+}
+
+.betaling input {
+  width: 100%;                  
+  height: 30px;                 
+  font-family: sans-serif;      
+  font-size: 17px;             
+  border: 1px solid #ccc;       
+  border-radius: 5px;           
+  outline: none;                
+  padding-left: 10px;           
+  padding-right: 10px;          
+  margin-top: 2px;              
+}
+
 
 .address label{
   display: flex;
@@ -993,6 +1056,7 @@ nav ul li.icon-item {
   border: 1px solid #ccc;  
   border-radius: 0px;  
   outline: none; 
+  padding-left: 10px;
 }
 
 .zipcode label{
@@ -1010,6 +1074,7 @@ nav ul li.icon-item {
   border: 1px solid #ccc;  
   border-radius: 0px;  
   outline: none; 
+  padding-left: 10px;
 }
 
 .contact{
@@ -1028,6 +1093,7 @@ nav ul li.icon-item {
   border: 1px solid #ccc;  
   border-radius: 0px;  
   outline: none; 
+  padding-left: 10px;
 }
 
 .save-btn{
@@ -1045,6 +1111,94 @@ nav ul li.icon-item {
 .save-btn:hover{
   opacity: 80%;
 }
+
+section.cancel {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+section.cancel:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------------- Levering --------------------------------------*/
+
+
+
+.deliv-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: 3px thin #333;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 85%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.deliv-card-2 {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: 3px thin #333;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 85%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.deliv-card input[type="radio"] {
+  margin-right: 10px; 
+}
+
+.deliv-card-2 input[type="radio"] {
+  margin-right: 10px; 
+}
+
+.delivery-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.delivery-icon {
+  padding-left: 4px; 
+  color: #333;
+  font-size: 1.2em;
+}
+
+.price {
+  padding-left: 510px; 
+  color: #333;
+}
+
+.deliv-card-2 .price{
+  padding-left: 470px;
+}
+
+.delivery-info {
+  display: block;        
+  white-space: normal;   
+  margin-bottom: 15px;   
+  font-size: 10px;       
+  color: #555;           
+  line-height: 1.5;     
+}
+
+
+
+
+
+
+
+
 
 
 
