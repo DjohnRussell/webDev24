@@ -1,13 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Angi tegnsettet og tilpasning til forskjellige skjermstørrelser -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Legg til Font Awesome og ditt lokale stilark -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-
+    
+    <!-- Tittel på siden -->
     <title>Hjem</title>
+
+    <!-- Metadata for søkemotorer og sosiale medier -->
+    <meta name="description" content="Dette er en mock nettbutikk med dummy-data for et eksamensprosjekt.">
+    <meta name="keywords" content="mock, nettbutikk, dummy-data, eksamen, produkter, handlekurv">
+    <meta name="author" content="Daniel John Russell">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- noindex, nofollow brukes for å hindre søkemotorer fra å indeksere denne siden -->
+
+    <!-- Metadata for sosiale medier deling -->
+    <meta property="og:title" content="Mock Nettbutikk - Eksamensprosjekt">
+    <meta property="og:description" content="En mock nettbutikk laget for et eksamensprosjekt.">
+    <meta property="og:image" content="URL_TIL_DUMMY_BILDE">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nb_NO">
+    <meta property="og:site_name" content="Mock Nettbutikk">
+    
+    <!-- Mikrodata for strukturerte data -->
+     <!---- Denne har jeg fått chat gpt til å hjelpe meg litt med --------->
+     <!---- Se chap gpt prompt i egent pdf--------->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Mock Nettbutikk",
+        "description": "En mock nettbutikk med dummy-data for eksamen.",
+        "url": "https://example.com",
+        "inLanguage": "no",
+        "author": {
+            "@type": "Person",
+            "name": "Daniel John Russell"
+        },
+        "mainEntity": {
+            "@type": "Store",
+            "name": "Mock Nettbutikk",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "URL_TIL_LOGO_BILDE"
+            },
+            "sameAs": "https://www.example-social-media-link.com",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+47 123 456 78",
+                "contactType": "Kundeservice",
+                "areaServed": "NO",
+                "availableLanguage": "no"
+            },
+            "offers": {
+                "@type": "OfferCatalog",
+                "name": "Produkter tilgjengelig",
+                "itemListElement": [
+                    {
+                        "@type": "Product",
+                        "name": "Produkt 1",
+                        "description": "Et flott produkt for mock shopping.",
+                        "image": "URL_TIL_PRODUKTBILDE",
+                        "url": "https://example.com/product1",
+                        "sku": "SKU123",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Merkenavn"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "url": "https://example.com/product1",
+                            "priceCurrency": "NOK",
+                            "price": "1999",
+                            "itemCondition": "https://schema.org/NewCondition",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    },
+                    {
+                        "@type": "Product",
+                        "name": "Produkt 2",
+                        "description": "Et annet flott produkt for mock shopping.",
+                        "image": "URL_TIL_PRODUKTBILDE",
+                        "url": "https://example.com/product2",
+                        "sku": "SKU124",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Merkenavn"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "url": "https://example.com/product2",
+                            "priceCurrency": "NOK",
+                            "price": "1999",
+                            "itemCondition": "https://schema.org/NewCondition",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+    
+    </script>
+
+    <!--------------------------------------------------------------------------->
 </head>
+
 
 <body>
     <!-- -----------------------------Navigation ------------------------------>
@@ -76,6 +179,7 @@
           </article>
 
           <!-- Har lagt denne inline siden det er det eneste javascripten som er med her -->
+           <!-- fått litt hjelp av chat gpt se prompt i pdf-->
           <script>
             let currentIndex = 0;
           
@@ -85,9 +189,9 @@
           
               currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
           
-              // Move the carousel by adjusting the transform property to show only one slide at a time
+              
               const carousel = document.getElementById('carouselImages');
-              carousel.style.transform = `translateX(${-currentIndex * 100}%)`; /* Adjust to match the wider image width */
+              carousel.style.transform = `translateX(${-currentIndex * 100}%)`; 
             }
           </script>
 
@@ -174,7 +278,7 @@
             <h3>Anmeldelser</h3>
             <hr class="styled-line-2">
             <figure class="rew-card">
-               <!--Bildet er tatt av Chiemsee2024 fra Pixabay-->
+               <!--Image by Chiemsee2024 fra Pixabay-->
               <img src="img/robert.jpg" alt="labrador img" class="robert-card-img">
               <figcaption class="rew-card-body">
                 <img src="img/three.png" alt="labrador img" class="three-card-img">
@@ -192,7 +296,7 @@
               </figcaption>
             </figure>
             <figure class="rew-card">
-              <!--Bildet er tatt av Chiemsee2024 fra Pixabay-->
+              <!--Image by Chiemsee2024 fra Pixabay-->
              <img src="img/robert.jpg" alt="labrador img" class="robert-card-img">
              <figcaption class="rew-card-body">
               <img src="img/three.png" alt="labrador img" class="three-card-img">
@@ -210,7 +314,7 @@
              </figcaption>
            </figure>
            <figure class="rew-card">
-            <!--Bildet er tatt av Chiemsee2024 fra Pixabay-->
+            <!--Image by Chiemsee2024 fra Pixabay-->
            <img src="img/robert.jpg" alt="labrador img" class="robert-card-img">
            <figcaption class="rew-card-body">
             <img src="img/three.png" alt="labrador img" class="three-card-img">
@@ -228,7 +332,7 @@
            </figcaption>
          </figure>
          <figure class="rew-card">
-          <!--Bildet er tatt av Chiemsee2024 fra Pixabay-->
+          <!--Image by Chiemsee2024 fra Pixabay-->
          <img src="img/robert.jpg" alt="labrador img" class="robert-card-img">
          <figcaption class="rew-card-body">
           <img src="img/three.png" alt="labrador img" class="three-card-img">
@@ -308,12 +412,6 @@
                 </li>
             </ul>  
         </footer>
-        
-        
-        
-          
-
-          
-          
+         
 </body>
 </html>

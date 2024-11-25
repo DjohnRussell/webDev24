@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Angi tegnsettet og tilpasning til forskjellige skjermstørrelser -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Legg til Font Awesome og ditt lokale stilark -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tittel på siden -->
+    <title>Checkout</title>
 
-    <title>checkout</title>
+    <!-- Metadata for søkemotorer og sosiale medier -->
+    <meta name="description" content="Dette er en mock nettbutikk med dummy-data for et eksamensprosjekt.">
+    <meta name="keywords" content="mock, nettbutikk, dummy-data, eksamen, produkter, handlekurv">
+    <meta name="author" content="Daniel John Russell">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- noindex, nofollow brukes for å hindre søkemotorer fra å indeksere denne siden -->
+
+    <!-- Metadata for sosiale medier deling -->
+    <meta property="og:title" content="Mock Nettbutikk - Eksamensprosjekt">
+    <meta property="og:description" content="En mock nettbutikk laget for et eksamensprosjekt.">
+    <meta property="og:image" content="URL_TIL_DUMMY_BILDE">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nb_NO">
+    <meta property="og:site_name" content="Mock Nettbutikk">
+    
+    <!-- Mikrodata for strukturerte data -->
+     <!---- Denne har jeg fårr chat gpt til å hjelpe meg litt med --------->
+     <!---- Se chap gpt prompt i egent pdf--------->
+     <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Mock Nettbutikk",
+        "description": "En mock nettbutikk med dummy-data for eksamen.",
+        "url": "https://example.com",
+        "inLanguage": "no",
+        "author": {
+            "@type": "Person",
+            "name": "Daniel John Russell"
+        },
+        "mainEntity": {
+            "@type": "Store",
+            "name": "Mock Nettbutikk",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "URL_TIL_LOGO_BILDE"
+            },
+            "sameAs": "https://www.example-social-media-link.com",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+47 123 456 78",
+                "contactType": "Kundeservice",
+                "areaServed": "NO",
+                "availableLanguage": "no"
+            },
+            "offers": {
+                "@type": "OfferCatalog",
+                "name": "Produkter tilgjengelig",
+                "itemListElement": [
+                    {
+                        "@type": "Product",
+                        "name": "Produkt 1",
+                        "description": "Et flott produkt for mock shopping.",
+                        "image": "URL_TIL_PRODUKTBILDE",
+                        "url": "https://example.com/product1",
+                        "sku": "SKU123",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Merkenavn"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "url": "https://example.com/product1",
+                            "priceCurrency": "NOK",
+                            "price": "1999",
+                            "itemCondition": "https://schema.org/NewCondition",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    },
+                    {
+                        "@type": "Product",
+                        "name": "Produkt 2",
+                        "description": "Et annet flott produkt for mock shopping.",
+                        "image": "URL_TIL_PRODUKTBILDE",
+                        "url": "https://example.com/product2",
+                        "sku": "SKU124",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Merkenavn"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "url": "https://example.com/product2",
+                            "priceCurrency": "NOK",
+                            "price": "1999",
+                            "itemCondition": "https://schema.org/NewCondition",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+    
+    </script>
+
+    <!--------------------------------------------------------------------------->
 </head>
 
 <body>
@@ -33,10 +135,11 @@
             
         </ul>
     </nav>
+    </section>
 
    
-    <section class="main-content">
-      <main>
+  <main class="main-content">
+      
         <p><a href="product.html"><i class="fas fa-arrow-left"></i> Fortsett å handle</a></p>
         <h3>Kasse</h3>
         <article class="shopping-cart">
@@ -72,11 +175,11 @@
               <div class="size-quantity">
                 <section>
                   <label for="size">Størrelse:</label>
-                  <input type="number" id="size" value="5">
+                  <input type="number" id="size1" value="5">
                 </section>
                 <section>
                   <label for="quantity">Antall:</label>
-                  <input type="number" id="quantity" value="1">
+                  <input type="number" id="quantity1" value="1">
                 </section>
               </div>
             </section>
@@ -92,16 +195,17 @@
               <div class="size-quantity">
                 <section>
                   <label for="size">Størrelse:</label>
-                  <input type="number" id="size" value="5">
+                  <input type="number" id="size2" value="5">
                 </section>
                 <section>
                   <label for="quantity">Antall:</label>
-                  <input type="number" id="quantity" value="1">
+                  <input type="number" id="quantity2" value="1">
                 </section>
               </div>
             </section>
           </section>
         </article>
+
         <article class="shopping-cart">
           <h1>2. DINE OPPLYSNINGER</h1>
         
@@ -163,7 +267,7 @@
           
 
           <section class="deliv-card-2">
-            <input type="radio" id="ekspress-levering" name="delivery-option" value="ekspress">
+            <input type="radio" id="ekspress-levering1" name="delivery-option" value="ekspress">
             <label for="ekspress-levering" class="delivery-label-2">
               Ekspress Pakke til utleveringsted
               <span class="price">59 kr</span>
@@ -171,7 +275,7 @@
           </section>
 
           <section class="deliv-card">
-            <input type="radio" id="ekspress-levering" name="delivery-option" value="ekspress">
+            <input type="radio" id="ekspress-levering2" name="delivery-option" value="ekspress">
             <label for="ekspress-levering" class="delivery-label">
               Standard Hjemlevering
               <span class="price">Gratis</span>
@@ -180,13 +284,13 @@
           </section>
         </article>  
 
-        <article class="shopping-cart">
+        <section class="shopping-cart">
           <h1>4.BETALING</h1>
         
           <p>Betal med kort <i class="fas fa-credit-card"></i></p>
         
           <!-- holder klasse navnene det samme da de er så å si identiske -->
-          <article>
+          
             <section class="kortnummer">
               <label for="kortnummer">Kortnummer</label>
               <input type="text" id="kortnummer" placeholder="342342****4435">
@@ -204,76 +308,87 @@
               </span>
             </section>
           
-            <section>
+            <section class="txt-and-btn">
+              <p class="to-pay-txt">å betale ink.mva</p>
+              <p class="to-pay">1 199 Kr</p>
               <button class="save-btn">Fullfør kjøp</button>
-            </section>
-          </article>
+              <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige</p>
+              <p>Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger</p>
+              <p>Uriktige eller ufullstendige opplysninger </p>
 
-      </main>
-    </section>
+              <form class="checkbox-one"> <label for="agree"> <input type="checkbox" id="agree" name="agree"> 
+                Ja takk! Send nyhetsbrev til meg </label></form>
+
+              <form>  <label for="agree1"> <input type="checkbox" id="agree1" name="agree"> 
+                Jeg ønsker å motta tekstmeldinger med tilbud og nyheter </label></form>
+            </section>
+        </section>
+        
+  </main>
     
     
 
     <hr class="styled-line">
-</body>
+
 <footer class="footer">
-    <ul>
-        <li><h2><a href="index.html">Logo</a></h2></li>
-        <li><p>At vero eos et accusamus et iusto odio dignissimois ducimus qui blanditiis</p></li>
-        
-        
-        <li class="side-by-side">
-          <section class="kontakt-info">
-            <h2>Kontakt</h2>
-            <p>
-              <i class="fas fa-map-marker-alt"></i>
-              <span> <strong>Addresse:</strong></span> 
-              <a href="https://www.google.com/maps?q=B%20R%20A%20veien%204,%201757%20Halden" target="_blank">
-                B R A veien 4, 1757 Halden
-              </a>
-            </p>
-            
-            <p>
-              <i class="fas fa-phone"></i> 
-              <span> <strong>Telefon:</strong></span> 
-              <a href="tel:+4769608000">+47 69 60 80 00</a>
-            </p>
-            <p>
-              <i class="fas fa-envelope"></i> <span> <strong> E-post:</strong></span> 
-              <a href="mailto:halden@hiof.no">halden@hiof.no</a>
-            </p>
-            <p>
-              <i class="fas fa-clock"></i> <span> <strong>Åpningstider: </strong> Stenger 15:00</span> 
-            </p>
-          </section>
+  <ul>
+      <li><h2><a href="index.html">Logo</a></h2></li>
+      <li><p>At vero eos et accusamus et iusto odio dignissimois ducimus qui blanditiis</p></li>
+      
+      
+      <li class="side-by-side">
+        <section class="kontakt-info">
+          <h2>Kontakt</h2>
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            <span> <strong>Addresse:</strong></span> 
+            <a href="https://www.google.com/maps?q=B%20R%20A%20veien%204,%201757%20Halden" target="_blank">
+              B R A veien 4, 1757 Halden
+            </a>
+          </p>
           
-          <section class="snarveier">
-            <h2>Snarveier</h2>
-            <p><a href="product.html">Produkter</a></p>
-            <p><a href="index.html#popularCategories">Kategorier</a></p>
-            <p><a href="mailto:halden@hiof.no">Kontakt Oss</a></p>
-          </section>
+          <p>
+            <i class="fas fa-phone"></i> 
+            <span> <strong>Telefon:</strong></span> 
+            <a href="tel:+4769608000">+47 69 60 80 00</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i> <span> <strong> E-post:</strong></span> 
+            <a href="mailto:halden@hiof.no">halden@hiof.no</a>
+          </p>
+          <p>
+            <i class="fas fa-clock"></i> <span> <strong>Åpningstider: </strong> Stenger 15:00</span> 
+          </p>
+        </section>
+        
+        <section class="snarveier">
+          <h2>Snarveier</h2>
+          <p><a href="product.html">Produkter</a></p>
+          <p><a href="index.html#popularCategories">Kategorier</a></p>
+          <p><a href="mailto:halden@hiof.no">Kontakt Oss</a></p>
+        </section>
+        <section class="sosiale-medier">
+          <h2>Sosiale Medier</h2>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
           
-          <section class="sosiale-medier">
-            <h2>Sosiale Medier</h2>
-            <a href="https://www.instagram.com" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            
-            <a href="https://www.facebook.com" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-            
-            <a href="https://www.linkedin.com" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            
-            <a href="https://www.pinterest.com" target="_blank">
-              <i class="fab fa-pinterest"></i>
-            </a>
-            
-          </section>
-        </li>
-    </ul>  
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          
+          <a href="https://www.linkedin.com" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          
+          <a href="https://www.pinterest.com" target="_blank">
+            <i class="fab fa-pinterest"></i>
+          </a>
+          
+        </section>
+      </li>
+  </ul>  
 </footer>
+
+</body>
 </html>

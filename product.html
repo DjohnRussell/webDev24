@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Angi tegnsettet og tilpasning til forskjellige skjermstørrelser -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Legg til Font Awesome og ditt lokale stilark -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-
+    
+    <!-- Tittel på siden -->
     <title>Produkter</title>
+
+    <!-- Metadata for søkemotorer og sosiale medier -->
+    <meta name="description" content="Dette er en mock nettbutikk med dummy-data for et eksamensprosjekt.">
+    <meta name="keywords" content="mock, nettbutikk, dummy-data, eksamen, produkter, handlekurv">
+    <meta name="author" content="Daniel John Russell">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- noindex, nofollow brukes for å hindre søkemotorer fra å indeksere denne siden -->
+
+    <!-- Metadata for sosiale medier deling -->
+    <meta property="og:title" content="Mock Nettbutikk - Eksamensprosjekt">
+    <meta property="og:description" content="En mock nettbutikk laget for et eksamensprosjekt.">
+    <meta property="og:image" content="URL_TIL_DUMMY_BILDE">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nb_NO">
+    <meta property="og:site_name" content="Mock Nettbutikk">
+    
+    <!-- Mikrodata for strukturerte data -->
+     <!---- Denne har jeg fårr chat gpt til å hjelpe meg litt med --------->
+     <!---- Se chap gpt prompt i egent pdf--------->
+     <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Mock Nettbutikk",
+        "description": "En mock nettbutikk med dummy-data for eksamen.",
+        "url": "https://example.com",
+        "inLanguage": "no",
+        "author": {
+            "@type": "Person",
+            "name": "Daniel John Russell"
+        },
+        "mainEntity": {
+            "@type": "Store",
+            "name": "Mock Nettbutikk",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "URL_TIL_LOGO_BILDE"
+            },
+            "sameAs": "https://www.example-social-media-link.com",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+47 123 456 78",
+                "contactType": "Kundeservice",
+                "areaServed": "NO",
+                "availableLanguage": "no"
+            },
+            "offers": {
+                "@type": "OfferCatalog",
+                "name": "Produkter tilgjengelig",
+                "itemListElement": [
+                    {
+                        "@type": "Product",
+                        "name": "Produkt 1",
+                        "description": "Et flott produkt for mock shopping.",
+                        "image": "URL_TIL_PRODUKTBILDE",
+                        "url": "https://example.com/product1",
+                        "sku": "SKU123",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Merkenavn"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "url": "https://example.com/product1",
+                            "priceCurrency": "NOK",
+                            "price": "1999",
+                            "itemCondition": "https://schema.org/NewCondition",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    },
+                    {
+                        "@type": "Product",
+                        "name": "Produkt 2",
+                        "description": "Et annet flott produkt for mock shopping.",
+                        "image": "URL_TIL_PRODUKTBILDE",
+                        "url": "https://example.com/product2",
+                        "sku": "SKU124",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Merkenavn"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "url": "https://example.com/product2",
+                            "priceCurrency": "NOK",
+                            "price": "1999",
+                            "itemCondition": "https://schema.org/NewCondition",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+    
+    </script>
+
+    <!--------------------------------------------------------------------------->
 </head>
 
 <body>
@@ -42,7 +144,7 @@
     </section>
     <div class="container">
       <section class="produktnavn">
-        <!--Bildet er tatt av nihan güzel daştan fra Pixabay-->
+        <!-- Image by nihan güzel daştan fra Pixabay-->
         <img src="img/tux.jpg" alt="tuxedo">
         <img src="img/tux.jpg" alt="tuxedo">
         <img src="img/tux.jpg" alt="tuxedo">
@@ -61,7 +163,7 @@
     
         <article class="button-container">
           <button class="shop-btn">Legg i handlekurv</button>
-          <button class="like-btn"><i class="far fa-heart"></i></a></button>
+          <button class="like-btn"><i class="far fa-heart"></i></button>
         </article>
 
         <article class="prod-info">
@@ -85,132 +187,27 @@
       </h3>
       <div class="carousel-container">
 
-        <figure class="carousel-item">
+        <article class="carousel-item">
           <img src="img/brick-wall.jpg" alt="brick-wall" class="carousel-img">
-          <figcaption class="carousel-body">
+          <section class="carousel-body">
             <h3 class="carousel-title">Product name</h3>
             <p class="carousel-price">kr 1999</p>
-          </figcaption>
+          </section>
           <section class="beside"><img src="img/three.png" alt="labrador img" class="three-stars">
             <p>842 Reviews</p></section>
-        </figure>
-      <!--Bildet er tatt av Pexels fra Pixabay-->
-      <figure class="carousel-item">
+        </article>
+      <!--Image by Pexels fra Pixabay-->
+      <article class="carousel-item">
         <img src="img/brick-wall.jpg" alt="brick-wall" class="carousel-img">
-        <figcaption class="carousel-body">
+        <section class="carousel-body">
           <h3 class="carousel-title">Product name</h3>
           <p class="carousel-price">kr 1999</p>
-        </figcaption>
+        </section>
         <section class="beside"><img src="img/three.png" alt="labrador img" class="three-stars">
           <p>842 Reviews</p></section>
-      </figure>
+      </article>
     
-      <figure class="carousel-item">
+      <article class="carousel-item">
         <img src="img/brick-wall.jpg" alt="brick-wall" class="carousel-img">
-        <figcaption class="carousel-body">
-          <h3 class="carousel-title">Product name</h3>
-          <p class="carousel-price">kr 1999</p>
-        </figcaption>
-        <section class="beside"><img src="img/three.png" alt="labrador img" class="three-stars">
-          <p>842 Reviews</p></section>
-      </figure>
-    
-      <figure class="carousel-item">
-        <img src="img/brick-wall.jpg" alt="brick-wall" class="carousel-img">
-        <figcaption class="carousel-body">
-          <h3 class="carousel-title">Product name</h3>
-          <p class="carousel-price">kr 1999</p>
-        </figcaption>
-        <section class="beside"><img src="img/three.png" alt="labrador img" class="three-stars">
-          <p>842 Reviews</p></section>
-      </figure>
-    
-      <figure class="carousel-item">
-        <img src="img/brick-wall.jpg" alt="brick-wall" class="carousel-img">
-        <figcaption class="carousel-body">
-          <h3 class="carousel-title">Product name</h3>
-          <p class="carousel-price">kr 1999</p>
-        </figcaption>
-        <section class="beside"><img src="img/three.png" alt="labrador img" class="three-stars">
-          <p>842 Reviews</p></section>
-      </figure>
-        
-    
-      <figure class="carousel-item">
-        <img src="img/brick-wall.jpg" alt="brick-wall" class="carousel-img">
-        <figcaption class="carousel-body">
-          <h3 class="carousel-title">Product name</h3>
-          <p class="carousel-price">kr 1999</p>
-        </figcaption>
-        <section class="beside"><img src="img/three.png" alt="labrador img" class="three-stars">
-          <p>842 Reviews</p></section>
-      </figure>
-      </div>
-    </section>
-    
-    
-
-
-    <hr class="styled-line">
-</body>
-<footer class="footer">
-    <ul>
-        <li><h2><a href="index.html">Logo</a></h2></li>
-        <li><p>At vero eos et accusamus et iusto odio dignissimois ducimus qui blanditiis</p></li>
-        
-        
-        <li class="side-by-side">
-          <section class="kontakt-info">
-            <h2>Kontakt</h2>
-            <p>
-              <i class="fas fa-map-marker-alt"></i>
-              <span> <strong>Addresse:</strong></span> 
-              <a href="https://www.google.com/maps?q=B%20R%20A%20veien%204,%201757%20Halden" target="_blank">
-                B R A veien 4, 1757 Halden
-              </a>
-            </p>
-            
-            <p>
-              <i class="fas fa-phone"></i> 
-              <span> <strong>Telefon:</strong></span> 
-              <a href="tel:+4769608000">+47 69 60 80 00</a>
-            </p>
-            <p>
-              <i class="fas fa-envelope"></i> <span> <strong> E-post:</strong></span> 
-              <a href="mailto:halden@hiof.no">halden@hiof.no</a>
-            </p>
-            <p>
-              <i class="fas fa-clock"></i> <span> <strong>Åpningstider: </strong> Stenger 15:00</span> 
-            </p>
-          </section>
-          
-          <section class="snarveier">
-            <h2>Snarveier</h2>
-            <p><a href="product.html">Produkter</a></p>
-            <p><a href="index.html#popularCategories">Kategorier</a></p>
-            <p><a href="mailto:halden@hiof.no">Kontakt Oss</a></p>
-          </section>
-
-          <section class="sosiale-medier">
-            <h2>Sosiale Medier</h2>
-            <a href="https://www.instagram.com" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            
-            <a href="https://www.facebook.com" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-            
-            <a href="https://www.linkedin.com" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            
-            <a href="https://www.pinterest.com" target="_blank">
-              <i class="fab fa-pinterest"></i>
-            </a>
-            
-          </section>
-        </li>
-    </ul>  
-</footer>
-</html>
+        <section class="carousel-body">
+          <h3 class="carousel
