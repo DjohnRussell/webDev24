@@ -194,4 +194,201 @@
               <p class="color">Farge: Beige</p>
               <div class="size-quantity">
                 <section>
+                  <label for="size">Størrelse:</label>
+                  <input type="number" id="size2" value="5">
+                </section>
+                <section>
+                  <label for="quantity">Antall:</label>
+                  <input type="number" id="quantity2" value="1">
+                </section>
+              </div>
+            </section>
+          </section>
+        </article>
+
+        <article class="shopping-cart">
+          <h1>2. DINE OPPLYSNINGER</h1>
+        
+          <p>Leveringsadresse</p>
+        
+          <section class="name">
+            <label for="fornavn">Fornavn:</label>
+            <input type="text" id="fornavn" placeholder="Nora*">
+            
+            <label for="etternavn">Etternavn:</label>
+            <input type="text" id="etternavn" placeholder="Normann*">
+          </section>
+        
+          <section class="address">
+            <label for="gateadresse">Gateadresse:</label>
+            <input type="text" id="gateadresse" placeholder="B R A veien 4*">
+          </section>
+        
+          <section class="zipcode">
+            <label for="Postnummer">Postnummer:</label>
+            <input type="text" id="Postnummer" placeholder="1752*">
+            
+            <label for="Poststed">Poststed:</label>
+            <input type="text" id="Poststed" placeholder="Halden">
+          </section>
+          
+          <section class="contact">
+            <p >Kontaktinformasjon</p>
+            <label for="epost">E-post:</label>
+            <input type="email" id="epost" placeholder="noranormann@hiof.no*">
+            
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" placeholder="+4749***018">
+          </section>
+
+          <section>
+            <button class="save-btn">Lagre</button>
+          </section>
+
+          <section class="cancel">
+            <p>
+              <a href="index.html">Avbryt</a>
+            </p>
+          </section>
+        </article>
+    
+        
+        <article class="shopping-cart">
+          <h1>3.LEVERING</h1>
+          <section class="deliv-card">
+            <input type="radio" id="ekspress-levering" name="delivery-option" value="ekspress">
+            <label for="ekspress-levering" class="delivery-label">
+              Ekspress Hjemlevering
+              <span class="price">59 kr</span>
+              <i class="fas fa-truck delivery-icon"></i>
+            </label>
+
+          </section>
+          
+
+          <section class="deliv-card-2">
+            <input type="radio" id="ekspress-levering1" name="delivery-option" value="ekspress">
+            <label for="ekspress-levering" class="delivery-label-2">
+              Ekspress Pakke til utleveringsted
+              <span class="price">59 kr</span>
+            </label>
+          </section>
+
+          <section class="deliv-card">
+            <input type="radio" id="ekspress-levering2" name="delivery-option" value="ekspress">
+            <label for="ekspress-levering" class="delivery-label">
+              Standard Hjemlevering
+              <span class="price">Gratis</span>
+              <i class="fas fa-box delivery-icon"></i> <!-- Delivery truck icon -->
+            </label>
+          </section>
+        </article>  
+
+        <section class="shopping-cart">
+          <h1>4.BETALING</h1>
+        
+          <p>Betal med kort <i class="fas fa-credit-card"></i></p>
+        
+          <!-- holder klasse navnene det samme da de er så å si identiske -->
+          
+            <section class="kortnummer">
+              <label for="kortnummer">Kortnummer</label>
+              <input type="text" id="kortnummer" placeholder="342342****4435">
+            </section>
+          
+            <section class="betaling">
+              <span>
+                <label for="utløpsdato">Utløpsdato</label>
+                <input type="text" id="utløpsdato" placeholder="mm/dd/yy">
+              </span>
+            
+              <span>
+                <label for="cvc">CVC/CVV</label>
+                <input type="text" id="cvc" placeholder="CVC/CVV">
+              </span>
+            </section>
+          
+            <section class="txt-and-btn">
+              <p class="to-pay-txt">å betale ink.mva</p>
+              <p class="to-pay">1 199 Kr</p>
+              <button class="save-btn">Fullfør kjøp</button>
+              <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige</p>
+              <p>Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger</p>
+              <p>Uriktige eller ufullstendige opplysninger </p>
+
+              <form class="checkbox-one"> <label for="agree"> <input type="checkbox" id="agree" name="agree"> 
+                Ja takk! Send nyhetsbrev til meg </label></form>
+
+              <form>  <label for="agree1"> <input type="checkbox" id="agree1" name="agree"> 
+                Jeg ønsker å motta tekstmeldinger med tilbud og nyheter </label></form>
+            </section>
+        </section>
+        
+  </main>
+    
+    
+
+    <hr class="styled-line">
+
+<footer class="footer">
+  <ul>
+      <li><h2><a href="index.html">Logo</a></h2></li>
+      <li><p>At vero eos et accusamus et iusto odio dignissimois ducimus qui blanditiis</p></li>
       
+      
+      <li class="side-by-side">
+        <section class="kontakt-info">
+          <h2>Kontakt</h2>
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            <span> <strong>Addresse:</strong></span> 
+            <a href="https://www.google.com/maps?q=B%20R%20A%20veien%204,%201757%20Halden" target="_blank">
+              B R A veien 4, 1757 Halden
+            </a>
+          </p>
+          
+          <p>
+            <i class="fas fa-phone"></i> 
+            <span> <strong>Telefon:</strong></span> 
+            <a href="tel:+4769608000">+47 69 60 80 00</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i> <span> <strong> E-post:</strong></span> 
+            <a href="mailto:halden@hiof.no">halden@hiof.no</a>
+          </p>
+          <p>
+            <i class="fas fa-clock"></i> <span> <strong>Åpningstider: </strong> Stenger 15:00</span> 
+          </p>
+        </section>
+        
+        <section class="snarveier">
+          <h2>Snarveier</h2>
+          <p><a href="product.html">Produkter</a></p>
+          <p><a href="index.html#popularCategories">Kategorier</a></p>
+          <p><a href="mailto:halden@hiof.no">Kontakt Oss</a></p>
+        </section>
+        <section class="sosiale-medier">
+          <h2>Sosiale Medier</h2>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          
+          <a href="https://www.linkedin.com" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          
+          <a href="https://www.pinterest.com" target="_blank">
+            <i class="fab fa-pinterest"></i>
+          </a>
+          
+        </section>
+      </li>
+  </ul>  
+</footer>
+
+</body>
+</html>
