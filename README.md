@@ -13,14 +13,6 @@ Dette er en eksamensoppgave som består av en enkel nettbutikk med responsivt de
 
 ---
 
-## 🌟 Funksjonalitet
-
-- **Responsivt design** 📱💻: Mobil-først-layout, med støtte for desktop.
-- **Navigasjon** 🧭: Enkel navigasjonsmeny for alle sidene.
-- **Kasseside** 🛒: Skjema for personopplysninger, levering og betaling.
-
----
-
 ## 🚀 Bruk
 
 Åpne `index.html` i en nettleser for å starte nettstedet.
